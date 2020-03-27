@@ -1,9 +1,15 @@
 <?php
-    define('NAME', 'Jedi');
-    $name = 'soso';
-    $age = 32;
-    echo $name;
-    define('NAME', 'Denis');
+    $name = 'Mario';
+    $friend = 'LUIGI';
+    // echo "Bonjour $name" . ' et ton \'ami\' ' . $friend;
+    // echo '</br>';
+    // echo "Bonjour $name et ton 'ami' $friend";
+    echo strlen($friend);
+    echo '</br>';
+    echo strtoupper($name);
+    echo '</br>';
+    echo strtolower($friend) . '</br>' . '</br>';
+    echo str_replace('L', 'k', $friend);
 ?>
 
 <html lang="en">
@@ -13,7 +19,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo 'Hello, $name'; ?></h1>
-    <h2><?php echo NAME, ' ', $age; ?></h2>
+
 </body>
 </html>
