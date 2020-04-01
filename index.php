@@ -1,15 +1,25 @@
 <?php
-    $name = 'Mario';
-    $friend = 'LUIGI';
-    // echo "Bonjour $name" . ' et ton \'ami\' ' . $friend;
-    // echo '</br>';
-    // echo "Bonjour $name et ton 'ami' $friend";
-    echo strlen($friend);
-    echo '</br>';
-    echo strtoupper($name);
-    echo '</br>';
-    echo strtolower($friend) . '</br>' . '</br>';
-    echo str_replace('L', 'k', $friend);
+// $persosOne = ['cartman', 'keny', 'mother fucker'];
+// echo $persosOne[1];
+
+$persosTwo = array('morrigan', 'berserk', 'don juan');
+// echo $persosTwo[2];
+print_r($persosTwo);
+
+echo '</br>';
+
+$ages = [20, 30, 40, 50];
+$ages[1] = 40;
+
+$ages[] = 60;
+array_push($ages, 70);
+
+print_r($ages);
+
+echo '</br>';
+echo count($ages);
+
+
 ?>
 
 <html lang="en">
