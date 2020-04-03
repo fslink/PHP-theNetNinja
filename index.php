@@ -1,24 +1,42 @@
 <?php
-// $persosOne = ['cartman', 'keny', 'mother fucker'];
-// echo $persosOne[1];
+// //index array
 
-$persosTwo = array('morrigan', 'berserk', 'don juan');
-// echo $persosTwo[2];
-print_r($persosTwo);
+//  $persosOne = ['cartman', 'keny', 'mother fucker'];
+// // echo $persosOne[1];
 
-echo '</br>';
+// $persosTwo = array('morrigan', 'berserk', 'don juan');
+// // echo $persosTwo[2];
+// // print_r($persosTwo);
 
-$ages = [20, 30, 40, 50];
-$ages[1] = 40;
+// // echo '</br>';
 
-$ages[] = 60;
-array_push($ages, 70);
+// // $ages = [20, 30, 40, 50];
+// // $ages[1] = 40;
 
-print_r($ages);
+// // $ages[] = 60;
+// // array_push($ages, 70);
 
-echo '</br>';
-echo count($ages);
+// // print_r($ages);
 
+// // echo '</br>';
+// // echo count($ages);
+
+// $peopleThree = array_merge($persosOne, $persosTwo);
+// print_r($peopleThree);
+// echo '</br> array length: ' . count($peopleThree); 
+
+//associative array
+$persosOne = ['mario' => 'red', 'luigi' => 'green', 'peach' => 'pink'];
+// print_r($persosOne);
+$persosOne['mario'] = 'black';
+// print_r($persosOne);
+
+$persosTwo = array('link' => 'green', 'toad' => 'white', 'bowser' => 'purple');
+// print_r($persosTwo);
+
+$persosThree = array_merge($persosOne, $persosTwo);
+print_r($persosThree);
+echo '</br> ' . count($persosThree);
 
 ?>
 
