@@ -1,42 +1,21 @@
 <?php
-// //index array
 
-//  $persosOne = ['cartman', 'keny', 'mother fucker'];
-// // echo $persosOne[1];
+$blogs = [
+    ['title' => 'mario party', 'author' => 'Korben','content' => 'lorem', 'likes' => 30],
+    ['title' => 'luigi mansion', 'author' => 'Korben','content' => 'lorem', 'likes' => 100],
+    ['title' => 'resident evil 4', 'author' => 'Chef Otaku', 'content' =>'lorem', 'likes' => 10]
+];
 
-// $persosTwo = array('morrigan', 'berserk', 'don juan');
-// // echo $persosTwo[2];
-// // print_r($persosTwo);
+// print_r($blogs);
+// echo $blogs[1]['title'];
 
-// // echo '</br>';
+$blogs[] = ['title' => 'Baiten Kaitos', 'author' => 'Monsieur Phil', 'content' => 'lorem', 'likes' => 87];
+// print_r($blogs[count($blogs)-1]);
+// print_r($blogs);
 
-// // $ages = [20, 30, 40, 50];
-// // $ages[1] = 40;
-
-// // $ages[] = 60;
-// // array_push($ages, 70);
-
-// // print_r($ages);
-
-// // echo '</br>';
-// // echo count($ages);
-
-// $peopleThree = array_merge($persosOne, $persosTwo);
-// print_r($peopleThree);
-// echo '</br> array length: ' . count($peopleThree); 
-
-//associative array
-$persosOne = ['mario' => 'red', 'luigi' => 'green', 'peach' => 'pink'];
-// print_r($persosOne);
-$persosOne['mario'] = 'black';
-// print_r($persosOne);
-
-$persosTwo = array('link' => 'green', 'toad' => 'white', 'bowser' => 'purple');
-// print_r($persosTwo);
-
-$persosThree = array_merge($persosOne, $persosTwo);
-print_r($persosThree);
-echo '</br> ' . count($persosThree);
+$popped = array_pop($blogs);
+// print_r($popped);
+print_r($blogs);
 
 ?>
 
