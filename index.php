@@ -6,16 +6,22 @@ $blogs = [
     ['title' => 'resident evil 4', 'author' => 'Chef Otaku', 'content' =>'lorem', 'likes' => 10]
 ];
 
-// print_r($blogs);
-// echo $blogs[1]['title'];
+// $blogs = ['mario party', 'Korben','lorem', 30];
 
-$blogs[] = ['title' => 'Baiten Kaitos', 'author' => 'Monsieur Phil', 'content' => 'lorem', 'likes' => 87];
-// print_r($blogs[count($blogs)-1]);
-// print_r($blogs);
+// for($i = 0; $i < count($blogs); $i++){
+//     echo $blogs[$i] . '<br>';
+// }
 
-$popped = array_pop($blogs);
-// print_r($popped);
-print_r($blogs);
+// foreach($blogs as $blog){
+//     echo $blog['title'] . ' - ' . $blog['author'] . ' - ' . $blog['likes'];
+//     echo '<br>';
+// }
+
+// $i = 0;
+// while($i < count($blogs)){
+//     echo $blogs[$i]['title'] . '<br>';
+//     $i++;
+// }
 
 ?>
 
@@ -26,6 +32,11 @@ print_r($blogs);
     <title>Document</title>
 </head>
 <body>
+
+    <?php foreach($blogs as $blog){?>
+        <h3><?php echo $blog['title'] ?></h3>
+        <p>$ - <?php echo $blog['likes'] ?></p>
+    <?php } ?>
 
 </body>
 </html>
