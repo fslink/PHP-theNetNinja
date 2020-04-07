@@ -1,27 +1,24 @@
 <?php
 
-$blogs = [
-    ['title' => 'mario party', 'author' => 'Korben','content' => 'lorem', 'likes' => 30],
-    ['title' => 'luigi mansion', 'author' => 'Korben','content' => 'lorem', 'likes' => 100],
-    ['title' => 'resident evil 4', 'author' => 'Chef Otaku', 'content' =>'lorem', 'likes' => 10]
-];
+// echo false; ""
+// echo true; // "1"
 
-// $blogs = ['mario party', 'Korben','lorem', 30];
+// number
+// echo 5 > 10;
+// echo 5 < 10;
+// echo 5 <= 5;
+// echo 5 >= 10;
+// echo 5 == 5;
+// echo 5 != 10;
 
-// for($i = 0; $i < count($blogs); $i++){
-//     echo $blogs[$i] . '<br>';
-// }
+//strings & losing comparaison
+// echo 'shaun' < 'zardoz';
+// echo 'shaun' > 'zardoz';
+// echo 'shaun' > 'Zardoz';
+// echo 5 !== '5'
 
-// foreach($blogs as $blog){
-//     echo $blog['title'] . ' - ' . $blog['author'] . ' - ' . $blog['likes'];
-//     echo '<br>';
-// }
-
-// $i = 0;
-// while($i < count($blogs)){
-//     echo $blogs[$i]['title'] . '<br>';
-//     $i++;
-// }
+// echo true == '1';
+echo false == '';
 
 ?>
 
@@ -33,10 +30,10 @@ $blogs = [
 </head>
 <body>
 
-    <?php foreach($blogs as $blog){?>
+    <!-- <?php foreach($blogs as $blog){?>
         <h3><?php echo $blog['title'] ?></h3>
         <p>$ - <?php echo $blog['likes'] ?></p>
-    <?php } ?>
+    <?php } ?> -->
 
 </body>
 </html>
