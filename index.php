@@ -19,6 +19,19 @@ $products = [
     ['name' => 'banana skin', 'price' => 2]
 ];
 
+foreach ($products as $key => $product) {
+
+    // if($product['name'] === 'lightning bolt'){
+    //     break;
+    // }
+
+    if ($product['price'] > 15) {
+        continue;
+    }
+
+    echo $product['name'] . ' ' . $product['price'] . '<br>';
+}
+
 ?>
 
 <html lang="en">
@@ -29,21 +42,21 @@ $products = [
 </head>
 <body>
     <h2>ALl products < 20 ET products > 10</h2>
-    <ul>
+    <!-- <ul>
         <?php foreach ($products as $key => $product) { ?>
             <?php if ($product['price'] < 20 && $product['price'] > 10) { ?>
                 <li><?php  echo $product['name']; ?></li>
             <?php }
         } ?>
-    </ul>
+    </ul> -->
     <h2>ALl products < 20 </h2>
-    <ul>
+    <!-- <ul>
         <?php foreach ($products as $key => $product) { ?>
             <?php if ($product['price'] < 20) { ?>
                 <li><?php  echo $product['name']; ?></li>
             <?php }
         } ?>
-    </ul>
+    </ul> -->
 
 </body>
 </html>
