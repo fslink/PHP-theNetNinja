@@ -1,15 +1,5 @@
 <?php
 
-// $price = 20;
-
-// if($price < 20){
-//     echo 'condition is met';
-// } elseif($price < 30) {
-//     echo 'elseif condition is met';
-// } else {
-//     echo 'condition is not met';
-// }
-
 $products = [
     ['name' => 'shiny star', 'price' => 20],
     ['name' => 'green shell', 'price' => 10],
@@ -19,18 +9,22 @@ $products = [
     ['name' => 'banana skin', 'price' => 2]
 ];
 
-foreach ($products as $key => $product) {
-
-    // if($product['name'] === 'lightning bolt'){
-    //     break;
-    // }
-
-    if ($product['price'] > 15) {
-        continue;
-    }
-
-    echo $product['name'] . ' ' . $product['price'] . '<br>';
+function sayHello($name = 'mario'){
+    echo "Salut $name ma petite gueule !";
 }
+
+// sayHello();
+
+function formattedProduct($product){
+    // echo "The product {$product['name']} costs {$product['price']} to buy";
+    return "The product {$product['name']} costs {$product['price']} to buy </br>";
+}
+
+$formatted[] = formattedProduct($products[0]);
+$formatted[] = formattedProduct(['name' => 'blue shell', 'price' => 25]);
+
+echo $formatted[0];
+echo $formatted[1];
 
 ?>
 
@@ -38,25 +32,9 @@ foreach ($products as $key => $product) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP Tutorial NetNinja</title>
 </head>
 <body>
-    <h2>ALl products < 20 ET products > 10</h2>
-    <!-- <ul>
-        <?php foreach ($products as $key => $product) { ?>
-            <?php if ($product['price'] < 20 && $product['price'] > 10) { ?>
-                <li><?php  echo $product['name']; ?></li>
-            <?php }
-        } ?>
-    </ul> -->
-    <h2>ALl products < 20 </h2>
-    <!-- <ul>
-        <?php foreach ($products as $key => $product) { ?>
-            <?php if ($product['price'] < 20) { ?>
-                <li><?php  echo $product['name']; ?></li>
-            <?php }
-        } ?>
-    </ul> -->
 
 </body>
 </html>
