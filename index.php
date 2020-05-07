@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <html lang="en">
     <!-- HEADER  -->
     <?php include 'templates/header.php'; ?>
