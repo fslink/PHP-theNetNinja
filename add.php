@@ -1,8 +1,26 @@
 <?php
     if(isset($_POST['submit'])){
-        echo htmlspecialchars($_POST['email']);
-        echo htmlspecialchars($_POST['title']);
-        echo htmlspecialchars($_POST['ingredients']);
+        // echo htmlspecialchars($_POST['email']);
+        // echo htmlspecialchars($_POST['title']);
+        // echo htmlspecialchars($_POST['ingredients']);
+
+        if(empty($_POST['email'])){
+            echo 'You have to give an email !';
+        } else {
+            echo htmlspecialchars($_POST['email'] . ' Valided !');
+        }
+
+        if(empty($_POST['title'])){
+            echo 'You have to give a title !';
+        } else {
+            echo htmlspecialchars($_POST['title'] . ' Valided !');
+        }
+
+        if(empty($_POST['ingredients'])){
+            echo 'You have to give ingredients !';
+        } else {
+            echo htmlspecialchars($_POST['ingredients'] . ' Valided !');
+        }
     }
 
 ?>
